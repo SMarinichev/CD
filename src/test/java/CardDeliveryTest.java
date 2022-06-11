@@ -28,7 +28,7 @@ public class CardDeliveryTest {
         String planningDate = generateDate(4);
         Configuration.holdBrowserOpen = true;
         open("http://localhost:9999");
-        $("[data-test-id='city'] input").setValue("Красногорск");
+        $("[data-test-id='city'] input").setValue("Москва");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(planningDate);
         $("[data-test-id='name'] input").setValue("Мариничев Станислав");
